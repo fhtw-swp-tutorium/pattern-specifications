@@ -1,35 +1,30 @@
+#language: de
+#noinspection SpellCheckingInspection
+
 Funktionalität: Observer
 
-Szenario: Es existiert mindestens ein Subjekt
-	Gegeben sei mindestens ein Subjekte
+  Szenariogrundriss:
+    Gegeben sei eine Liste von Subjekten
+    Dann darf diese Liste nicht leer sein
 
-Szenario: Subjekte haben eine Register Methode, welche als einzigen Paramter ein Interface entgegennimmt
-	Gegeben sei mindestens ein Subjekte
-	Dann haben Subjekte eine passende Register Methode
-	
-Szenario: Subjekte haben eine Unregister Methode, welche als einzigen Paramter ein Interface entgegennimmt
-	Gegeben sei mindestens ein Subjekte
-	Dann haben Subjekte eine passende Unregister Methode
- 
-Szenario: Subjekte haben eine Update Methode, welche keinen Parameter entgegennimmt
-	Gegeben sei mindestens ein Subjekte
-	Dann haben Subjekte eine passende Update Methode
+    Szenario: Alle Subjekte sollten eine Methode zum Hinzufügen eines Beobachters bieten
+      Dann sollten alle Subjekte eine Methode zum Hinzufügen bieten
 
-Szenario: Observer kann sich bei Subjekt registieren und wird danach geupdated
-	Gegeben sei mindestens ein Subjekte
-	Dann haben Subjekte eine passende Register Methode
-	Dann haben Subjekte eine passende Update Methode
-	Wenn sich bei allen Subjekten je ein Observer mit den Namen "TestObserver" registiert
-	Wenn Subjekte die Update Methode Aufrufen
-	Wenn Subjekte die Update Methode Aufrufen
-	Dann sollen alle Observer "TestObserver" "2" mal aufgerufen worden sein
+    Szenario: Alle Subjekte sollten eine Methode zum Entfernen eines Beobachters bieten
+      Dann sollten alle Subjekte eine Methode zum Entfernen bieten
 
-Szenario: Observer kann sich bei Subjekt abmelden und wird danach nicht mehr geupdated
-	Gegeben sei mindestens ein Subjekte
-	Dann haben Subjekte eine passende Register Methode
-	Dann haben Subjekte eine passende Update Methode
-	Dann haben Subjekte eine passende Unregister Methode
-	Wenn sich bei allen Subjekten je ein Observer mit den Namen "TestObserver" registiert
-	Wenn Subjekte die Update Methode Aufrufen
-	Wenn Subjekte die Update Methode Aufrufen
-	Dann sollen alle Observer "TestObserver" "2" mal aufgerufen worden sein
+    Szenario: Alle Subjekte sollten eine Methode zum Aktualisieren aller Beobachters bieten
+      Dann sollten alle Subjekte eine Methode zum Aktualisieren bieten
+
+    Szenario: Beobachter sollten aufgerufen werden, wenn sie registriert sind
+      Gegeben sei ein Beobachter
+      Wenn sich dieser Beobachter registriert
+      Und die Method zum Aktualisieren aufgerufen wird
+      Dann soll der Beobachter aufgerufen werden
+
+    Szenario: Beobachter sollten nicht mehr aufgerufen werden, wenn sie sich vom Subjekt abmelden
+      Gegeben sei ein Beobachter
+      Wenn sich dieser Beobachter registriert
+      Und sich dieser Beobachter wieder abmeldet
+      Und die Method zum Aktualisieren aufgerufen wird
+      Dann soll der Beobachter nicht aufgerufen worden sein

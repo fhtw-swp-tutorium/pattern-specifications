@@ -28,3 +28,6 @@ Funktionalität: Observer
       Und sich dieser Beobachter wieder abmeldet
       Und die Method zum Aktualisieren aufgerufen wird
       Dann soll der Beobachter nicht aufgerufen worden sein
+
+
+

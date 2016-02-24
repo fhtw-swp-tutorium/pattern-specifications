@@ -3,7 +3,7 @@
 
 Funktionalität: Observer
 
-  Szenariogrundriss:
+  Grundlage:
     Gegeben sei eine Liste von Subjekten
     Dann darf diese Liste nicht leer sein
 

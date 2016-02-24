@@ -3,7 +3,7 @@
 
 Funktionalität: Kommando
 
-  Szenariogrundriss:
+  Grundlage:
     Gegeben sei eine Liste von Klassen mit dem Attribut "Invoker"
     Dann darf diese Liste nicht leer sein
 

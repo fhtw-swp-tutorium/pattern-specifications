@@ -3,7 +3,7 @@
 
 Funktionalität: Singleton
 
-  Szenariogrundriss:
+  Grundlage:
     Gegeben sei eine Liste von Singletons
     Dann darf diese Liste nicht leer sein
 

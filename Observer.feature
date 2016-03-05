@@ -22,7 +22,7 @@ Funktionalität: Beobachter
     Dann erwarte ich mir jeweils genau eine Methode
 
   Szenario: Eine Methode zum Entfernen eines Beobachters muss strukturell korrekt sein
-    Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "RegisterObserver" suche
+    Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "UnregisterObserver" suche
     Dann erwarte ich mir eine Methode, die mit einem dieser Präfixe beginnt: "remove, unregister, detach, unsubscribe"
     Und jede Methode muss genau "1" Parameter haben
     Und jeder Parameter muss ein Interface sein
@@ -32,7 +32,7 @@ Funktionalität: Beobachter
     Dann erwarte ich mir jeweils genau eine Methode
 
   Szenario: Eine Methode zum Aktualisieren der Beobachter muss strukturell korrekt sein
-    Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "RegisterObserver" suche
+    Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "NotifyObservers" suche
     Dann erwarte ich mir eine Methode, die mit einem dieser Präfixe beginnt: "update, notify"
     Und jede Methode muss genau "0" Parameter haben
 

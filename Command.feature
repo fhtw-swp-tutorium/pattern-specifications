@@ -22,7 +22,6 @@ Funktionalität: Kommando
       
     Szenario: Kommando soll ausgeführt werden, wenn es an Invoker übergeben wird
       Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "InvokeCommand" suche
-	  #Preconditions? (alle von oben?)
       Und ich eine Instanz des Invokers erzeuge
       Und ich eine dynamische Instanz des Kommandos erzeuge
       Und dieses Kommando an den Invoker übergebe

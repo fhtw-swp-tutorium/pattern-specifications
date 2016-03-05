@@ -14,7 +14,7 @@ Funktionalität: Kommando
     Szenario: Jede Methode mit dem Attribut "InvokeCommand" darf genau ein Interface als Parameter nehmen
       Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "InvokeCommand" suche
       Dann muss jede Methode genau einen Parameter haben
-      Und muss jeder Parameter ein Interface sein
+      Und jeder Parameter muss ein Interface sein
       
     Szenario: Jedes Kommando-Interface muss eine Implementierung haben
       Wenn ich in jeder Klasse nach einer Methode mit dem Attribut "InvokeCommand" suche

@@ -36,12 +36,13 @@ Funktionalität: Beobachter
     Dann erwarte ich mir eine Methode, die mit einem dieser Präfixe beginnt: "update, notify"
     Und jede Methode muss genau "0" Parameter haben
 
+
   Szenario: Beobachter sollen aufgerufen werden, wenn sie registriert sind
     Gegeben sei eine Instanz des Subjekts
     Und eine Instanz des Beobachters
     Wenn ich diesen Beobachter hinzufügen
     Und die Methode zum Aktualisieren aufrufe
-    Dann soll der Beobachter "1" Mal aufgerufen werden
+    Dann soll mindestens eine Methode des Beobachters aufgerufen werden
 
   Szenario: Beobachter sollen nicht mehr aufgerufen werden, wenn sie sich vom Subjekt abmelden
     Gegeben sei eine Instanz des Subjekts
@@ -49,4 +50,4 @@ Funktionalität: Beobachter
     Wenn ich diesen Beobachter hinzufügen
     Und ich diesen Beobachter entferne
     Und die Methode zum Aktualisieren aufrufe
-    Dann soll der Beobachter "0" Mal aufgerufen werden
+    Dann soll keine Methode des Beobachters aufgerufen werden
